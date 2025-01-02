@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>TO DO LIST</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="screen-backdrop"></div>
+        <div class="screen home-screen">
+            <div class="head-wrapper">
+                <div class="menu-btn">
+                    <img src="menu.svg" alt="">
+                </div>
+
+                <div class="welcome">
+                    <div class="content">
+                        <h1>Hello John</h1>
+                        <p>Today you have 5 tasks</p>
+                    </div>
+                    <div class="image">
+                        <div class="backdrop"></div>
+                        <img src="young-woman.png" alt="">
+                    </div>
+                </div>
+            </div> 
+            
+            <!-- categories -->
+            <div class="categories-wrapper">
+                <div class="categories">
+                    <div class="category">
+                        <div class="left">
+                            <img src="young-woman.png" alt="">
+                            <div class="content">
+                                <h1>Personal</h1>
+                                <p>5 tasks</p>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="toggle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48" id="three-dots">
+                                    <path fill="#000" d="M24 15C26.4853 15 28.5 12.9853 28.5 10.5 28.5 8.01472 26.4853 6 24 6 21.5147 6 19.5 8.01472 19.5 10.5 19.5 12.9853 21.5147 15 24 15zM24 28.5C26.4853 28.5 28.5 26.4853 28.5 24 28.5 21.5147 26.4853 19.5 24 19.5 21.5147 19.5 19.5 21.5147 19.5 24 19.5 26.4853 21.5147 28.5 24 28.5zM24 42C26.4853 42 28.5 39.9853 28.5 37.5 28.5 35.0147 26.4853 33 24 33 21.5147 33 19.5 35.0147 19.5 37.5 19.5 39.9853 21.5147 42 24 42z"></path>
+                                  </svg>                                  
+                            </div>
+                        </div>
+                    </div>
+<!-- 
+                    <div class="category">
+                        <div class="left">
+                            <img src="young-woman.png" alt="">
+                            <div class="content">
+                                <h1>Personal</h1>
+                                <p>5 tasks</p>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="toggle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48" id="three-dots">
+                                    <path fill="#000" d="M24 15C26.4853 15 28.5 12.9853 28.5 10.5 28.5 8.01472 26.4853 6 24 6 21.5147 6 19.5 8.01472 19.5 10.5 19.5 12.9853 21.5147 15 24 15zM24 28.5C26.4853 28.5 28.5 26.4853 28.5 24 28.5 21.5147 26.4853 19.5 24 19.5 21.5147 19.5 19.5 21.5147 19.5 24 19.5 26.4853 21.5147 28.5 24 28.5zM24 42C26.4853 42 28.5 39.9853 28.5 37.5 28.5 35.0147 26.4853 33 24 33 21.5147 33 19.5 35.0147 19.5 37.5 19.5 39.9853 21.5147 42 24 42z"></path>
+                                  </svg>                                  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category">
+                        <div class="left">
+                            <img src="young-woman.png" alt="">
+                            <div class="content">
+                                <h1>Personal</h1>
+                                <p>5 tasks</p>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="toggle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48" id="three-dots">
+                                    <path fill="#000" d="M24 15C26.4853 15 28.5 12.9853 28.5 10.5 28.5 8.01472 26.4853 6 24 6 21.5147 6 19.5 8.01472 19.5 10.5 19.5 12.9853 21.5147 15 24 15zM24 28.5C26.4853 28.5 28.5 26.4853 28.5 24 28.5 21.5147 26.4853 19.5 24 19.5 21.5147 19.5 19.5 21.5147 19.5 24 19.5 26.4853 21.5147 28.5 24 28.5zM24 42C26.4853 42 28.5 39.9853 28.5 37.5 28.5 35.0147 26.4853 33 24 33 21.5147 33 19.5 35.0147 19.5 37.5 19.5 39.9853 21.5147 42 24 42z"></path>
+                                  </svg>                                  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category">
+                        <div class="left">
+                            <img src="young-woman.png" alt="">
+                            <div class="content">
+                                <h1>Personal</h1>
+                                <p>5 tasks</p>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="toggle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48" id="three-dots">
+                                    <path fill="#000" d="M24 15C26.4853 15 28.5 12.9853 28.5 10.5 28.5 8.01472 26.4853 6 24 6 21.5147 6 19.5 8.01472 19.5 10.5 19.5 12.9853 21.5147 15 24 15zM24 28.5C26.4853 28.5 28.5 26.4853 28.5 24 28.5 21.5147 26.4853 19.5 24 19.5 21.5147 19.5 19.5 21.5147 19.5 24 19.5 26.4853 21.5147 28.5 24 28.5zM24 42C26.4853 42 28.5 39.9853 28.5 37.5 28.5 35.0147 26.4853 33 24 33 21.5147 33 19.5 35.0147 19.5 37.5 19.5 39.9853 21.5147 42 24 42z"></path>
+                                  </svg>                                  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category">
+                        <div class="left">
+                            <img src="young-woman.png" alt="">
+                            <div class="content">
+                                <h1>Personal</h1>
+                                <p>5 tasks</p>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="toggle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48" id="three-dots">
+                                    <path fill="#000" d="M24 15C26.4853 15 28.5 12.9853 28.5 10.5 28.5 8.01472 26.4853 6 24 6 21.5147 6 19.5 8.01472 19.5 10.5 19.5 12.9853 21.5147 15 24 15zM24 28.5C26.4853 28.5 28.5 26.4853 28.5 24 28.5 21.5147 26.4853 19.5 24 19.5 21.5147 19.5 19.5 21.5147 19.5 24 19.5 26.4853 21.5147 28.5 24 28.5zM24 42C26.4853 42 28.5 39.9853 28.5 37.5 28.5 35.0147 26.4853 33 24 33 21.5147 33 19.5 35.0147 19.5 37.5 19.5 39.9853 21.5147 42 24 42z"></path>
+                                  </svg>                                  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category">
+                        <div class="left">
+                            <img src="young-woman.png" alt="">
+                            <div class="content">
+                                <h1>Personal</h1>
+                                <p>5 tasks</p>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="toggle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48" id="three-dots">
+                                    <path fill="#000" d="M24 15C26.4853 15 28.5 12.9853 28.5 10.5 28.5 8.01472 26.4853 6 24 6 21.5147 6 19.5 8.01472 19.5 10.5 19.5 12.9853 21.5147 15 24 15zM24 28.5C26.4853 28.5 28.5 26.4853 28.5 24 28.5 21.5147 26.4853 19.5 24 19.5 21.5147 19.5 19.5 21.5147 19.5 24 19.5 26.4853 21.5147 28.5 24 28.5zM24 42C26.4853 42 28.5 39.9853 28.5 37.5 28.5 35.0147 26.4853 33 24 33 21.5147 33 19.5 35.0147 19.5 37.5 19.5 39.9853 21.5147 42 24 42z"></path>
+                                  </svg>                                  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category">
+                        <div class="left">
+                            <img src="young-woman.png" alt="">
+                            <div class="content">
+                                <h1>Personal</h1>
+                                <p>5 tasks</p>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="toggle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48" id="three-dots">
+                                    <path fill="#000" d="M24 15C26.4853 15 28.5 12.9853 28.5 10.5 28.5 8.01472 26.4853 6 24 6 21.5147 6 19.5 8.01472 19.5 10.5 19.5 12.9853 21.5147 15 24 15zM24 28.5C26.4853 28.5 28.5 26.4853 28.5 24 28.5 21.5147 26.4853 19.5 24 19.5 21.5147 19.5 19.5 21.5147 19.5 24 19.5 26.4853 21.5147 28.5 24 28.5zM24 42C26.4853 42 28.5 39.9853 28.5 37.5 28.5 35.0147 26.4853 33 24 33 21.5147 33 19.5 35.0147 19.5 37.5 19.5 39.9853 21.5147 42 24 42z"></path>
+                                  </svg>                                  
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- tasks screen -->
+         <div class="screen category-screen">
+            
+            <div class="head-wrapper">
+                <div class="back-btn">
+                    <img src="back-arrow.svg" alt="">
+                </div>
+                <div class="options">
+                    <img src="three-dots.svg" alt="">
+                </div>
+            </div>
+            <div class="category-details">
+                <img src="young-woman.png" alt="" id="category-img">
+                <div class="details">
+                    <p>8 tasks</p>
+                    <h1>Personal</h1>
+                </div>
+            </div> 
+            
+            <!-- tasks -->
+            <!-- <div class="tasks-wrapper">
+                <div class="tasks">
+                    <div class="task">
+                        <div class="left">
+                            <div class="checkbox"></div>
+                            <div class="content">
+                                <h1>Go to the gym</h1>
+                                <p>30 minutes</p>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="toggle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48" id="three-dots">
+                                    <path fill="#000" d="M24 15C26.4853 15 28.5 12.9853 28.5 10.5 28.5 8.01472 26.4853 6 24 6 21.5147 6 19.5 8.01472 19.5 10.5 19.5 12.9853 21.5147 15 24 15zM24 28.5C26.4853 28.5 28.5 26.4853 28.5 24 28.5 21.5147 26.4853 19.5 24 19.5 21.5147 19.5 19.5 21.5147 19.5 24 19.5 26.4853 21.5147 28.5 24 28.5zM24 42C26.4853 42 28.5 39.9853 28.5 37.5 28.5 35.0147 26.4853 33 24 33 21.5147 33 19.5 35.0147 19.5 37.5 19.5 39.9853 21.5147 42 24 42z"></path>
+                                  </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+         </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
