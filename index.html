@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>TO DO LIST</title>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="screen-backdrop"></div>
@@ -19,15 +21,15 @@
                 <div class="welcome">
                     <div class="content">
                         <h1>Hello John</h1>
-                        <p>Today you have 5 tasks</p>
+                        <p>Today you have <span class="totalTasks"></span> tasks</p>
                     </div>
                     <div class="image">
                         <div class="backdrop"></div>
                         <img src="young-woman.png" alt="">
                     </div>
                 </div>
-            </div> 
-            
+            </div>
+
             <!-- categories -->
             <div class="categories-wrapper">
                 <div class="categories">
@@ -35,19 +37,22 @@
                         <div class="left">
                             <img src="young-woman.png" alt="">
                             <div class="content">
-                                <h1>Personal</h1>
-                                <p>5 tasks</p>
+                                <h1 Personal</h1>
+                                <p >5 tasks</p>
                             </div>
                         </div>
                         <div class="options">
                             <div class="toggle-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48" id="three-dots">
-                                    <path fill="#000" d="M24 15C26.4853 15 28.5 12.9853 28.5 10.5 28.5 8.01472 26.4853 6 24 6 21.5147 6 19.5 8.01472 19.5 10.5 19.5 12.9853 21.5147 15 24 15zM24 28.5C26.4853 28.5 28.5 26.4853 28.5 24 28.5 21.5147 26.4853 19.5 24 19.5 21.5147 19.5 19.5 21.5147 19.5 24 19.5 26.4853 21.5147 28.5 24 28.5zM24 42C26.4853 42 28.5 39.9853 28.5 37.5 28.5 35.0147 26.4853 33 24 33 21.5147 33 19.5 35.0147 19.5 37.5 19.5 39.9853 21.5147 42 24 42z"></path>
-                                  </svg>                                  
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"
+                                    viewBox="0 0 48 48" id="three-dots">
+                                    <path fill="#000"
+                                        d="M24 15C26.4853 15 28.5 12.9853 28.5 10.5 28.5 8.01472 26.4853 6 24 6 21.5147 6 19.5 8.01472 19.5 10.5 19.5 12.9853 21.5147 15 24 15zM24 28.5C26.4853 28.5 28.5 26.4853 28.5 24 28.5 21.5147 26.4853 19.5 24 19.5 21.5147 19.5 19.5 21.5147 19.5 24 19.5 26.4853 21.5147 28.5 24 28.5zM24 42C26.4853 42 28.5 39.9853 28.5 37.5 28.5 35.0147 26.4853 33 24 33 21.5147 33 19.5 35.0147 19.5 37.5 19.5 39.9853 21.5147 42 24 42z">
+                                    </path>
+                                </svg>
                             </div>
                         </div>
                     </div>
-<!-- 
+                    <!-- 
                     <div class="category">
                         <div class="left">
                             <img src="young-woman.png" alt="">
@@ -154,8 +159,8 @@
         </div>
 
         <!-- tasks screen -->
-         <div class="screen category-screen">
-            
+        <div class="screen category-screen">
+
             <div class="head-wrapper">
                 <div class="back-btn">
                     <img src="back-arrow.svg" alt="">
@@ -167,11 +172,38 @@
             <div class="category-details">
                 <img src="young-woman.png" alt="" id="category-img">
                 <div class="details">
-                    <p>8 tasks</p>
-                    <h1>Personal</h1>
+                    <p class="category-tasks">8 tasks</p>
+                    <h1 class="category-title"></h1>>Personal</h1>
                 </div>
-            </div> 
-            
+            </div>
+            <div class="tasks-wrapper">
+                <div class="tasks">
+                    <div class="task-wrapper">
+                        <label for="task" class="task">
+                            <input type="checkbox" name="task" id="task">
+                            <span class="checkmark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    id="check">
+                                    <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                    <path
+                                        d="M9 16.17L5.53 12.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0L9 16.17z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <p>Buy a new car</p>
+                        </label>
+                        <div class="delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="delete">
+                                <path
+                                    d="M24.2,12.193,23.8,24.3a3.988,3.988,0,0,1-4,3.857H12.2a3.988,3.988,0,0,1-4-3.853L7.8,12.193a1,1,0,0,1,2-.066l.4,12.11a2,2,0,0,0,2,1.923h7.6a2,2,0,0,0,2-1.927l.4-12.106a1,1,0,0,1,2,.066Zm1.323-4.029a1,1,0,0,1-1,1H7.478a1,1,0,0,1,0-2h3.1a1.276,1.276,0,0,0,1.273-1.148,2.991,2.991,0,0,1,2.984-2.694h2.33a2.991,2.991,0,0,1,2.984,2.694,1.276,1.276,0,0,0,1.273,1.148h3.1A1,1,0,0,1,25.522,8.164Zm-11.936-1h4.828a3.3,3.3,0,0,1-.255-.944,1,1,0,0,0-.994-.9h-2.33a1,1,0,0,0-.994.9A3.3,3.3,0,0,1,13.586,7.164Zm1.007,15.151V13.8a1,1,0,0,0-2,0v8.519a1,1,0,0,0,2,0Zm4.814,0V13.8a1,1,0,0,0-2,0v8.519a1,1,0,0,0,2,0Z">
+                                </path>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- tasks -->
             <!-- <div class="tasks-wrapper">
                 <div class="tasks">
@@ -193,9 +225,46 @@
                     </div>
                 </div>
             </div> -->
+        </div>
+
+        <!-- add task btn -->
+        <div class="add-task-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="plus">
+                <g>
+                    <g>
+                        <rect width="24" height="24" opacity="0" transform="rotate(180 12 12)"></rect>
+                        <path d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <!-- backdrop -->
+         <div class="black-backdrop"></div>
+
+        <!-- add task form -->
+         <div class="add-task">
+            <div class="add-task-backdrop"></div>
+            <h1 class="heading">Add Task</h1>
+            <div class="input-group">
+                <label for="task-input">Task</label>
+                <input type="text" name="" id="task-input" required>
+            </div>
+            <div class="input-group">
+                <label for="category-select">Category</label>
+                <select name="" id="category-select">
+                    <option value="personal">Personal</option>
+                </select>
+            </div>
+            <div class="btns">
+                <button class="cancel-btn">Cancel</button>
+                <button class="add-btn">Add</button>
+            </div>
          </div>
 
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
