@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <div class="add-tasks-container">
+            <h1>To-Do List</h1>
+        <input type="text" id="todo-input" placeholder="Add a new task...">
+        <input type="text" id="category-input" placeholder="Enter category...">
+        <input type="date" id="due-date-input" />
+        <button id="add-task">Add Task</button>
+        </div>
+        <div class="progress-container">
+            <ul id="todo-list">
+                
+            </ul>
+        <div id="progress-container">
+            <label for="progress-bar">Completion Progress:</label>
+            <progress id="progress-bar" value="0" max="100"></progress>
+        </div>
+        </div>
+        
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
